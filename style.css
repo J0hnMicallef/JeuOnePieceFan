@@ -1,0 +1,1075 @@
+*,
+::before,
+::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'one_pieceregular';
+    src: url('font/one_piece_font-webfont.woff2') format('woff2'),
+         url('font/one_piece_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    height: 410vh;
+}
+
+h1
+{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    font-family: 'one_pieceregular';
+    text-decoration: underline;
+}
+
+#btnCommencer
+{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: x-large;
+}
+
+.pageAccueil
+{
+    background: url(./imgJeuOP/FondJeuOP.jpg) no-repeat center/cover;
+    height: 100vh; 
+}
+
+.plateau
+{
+    width: 454px;
+    border: solid goldenrod 3px;
+    background: blue;
+    position: relative;
+    height: 400vh;
+    position: absolute;
+    top: 20px;
+    visibility: hidden;
+}
+
+#ile1
+{
+    position: absolute;
+    top: 10px;
+     left: 5px;
+}
+
+#c1
+{
+    position: absolute;
+    top: 40px;
+    left: 115px;
+}
+
+#c2
+{
+    position: absolute;
+    top: 40px;
+    left: 185px;
+}
+
+#c3
+{
+    position: absolute;
+    top: 40px;
+    left: 255px;
+}
+
+#ile2
+{
+    position: absolute;
+    top: 10px;
+    left: 325px;
+}
+
+#c4
+{
+    position: absolute;
+    top: 120px;
+    left: 365px;
+}
+
+#c5
+{
+    position: absolute;
+    top: 190px;
+    left: 365px;
+}
+
+#c6
+{
+    position: absolute;
+    top: 260px;
+    left: 365px;
+}
+
+#ile3
+{
+    position: absolute;
+    top: 320px;
+    left: 325px;
+}
+
+#c7
+{
+    position: absolute;
+    top: 360px;
+    left: 115px;
+}
+
+#c8
+{
+    position: absolute;
+    top: 360px;
+    left: 185px;
+}
+
+#c9
+{
+    position: absolute;
+    top: 360px;
+    left: 255px;
+}
+
+#ile4
+{
+    position: absolute;
+    top: 330px;
+    left: 0;
+}
+
+#c10
+{
+    position: absolute;
+    top: 430px;
+    left: 30px;
+}
+
+#c11
+{
+    position: absolute;
+    top: 500px;
+    left: 30px;
+}
+
+#c12
+{
+    position: absolute;
+    top: 570px;
+    left: 30px;
+}
+
+#ile5
+{
+    position: absolute;
+    top: 640px;
+    left: 0;
+}
+
+#c13
+{
+    position: absolute;
+    top: 660px;
+    left: 115px;
+}
+
+#c14
+{
+    position: absolute;
+    top: 660px;
+    left: 185px;
+}
+
+#c15
+{
+    position: absolute;
+    top: 660px;
+    left: 255px;
+}
+
+#ile6
+{
+    position: absolute;
+    top: 640px;
+    left: 325px;
+}
+
+#c16
+{
+    position: absolute;
+    top: 740px;
+    left: 365px;
+}
+
+#c17
+{
+    position: absolute;
+    top: 810px;
+    left: 365px;
+}
+
+#c18
+{
+    position: absolute;
+    top: 880px;
+    left: 365px;
+}
+
+#ile7
+{
+    position: absolute;
+    top: 950px;
+    left: 325px;
+}
+
+#c19
+{
+    position: absolute;
+    top: 980px;
+    left: 115px;
+}
+
+#c20
+{
+    position: absolute;
+    top: 980px;
+    left: 185px;
+}
+
+#c21
+{
+    position: absolute;
+    top: 980px;
+    left: 255px;
+}
+
+#ile8
+{
+    position: absolute;
+    top: 950px;
+    left: 0;
+}
+
+#c22
+{
+    position: absolute;
+    top: 1050px;
+    left: 30px;
+}
+
+#c23
+{
+    position: absolute;
+    top: 1120px;
+    left: 30px;
+}
+
+#c24
+{
+    position: absolute;
+    top: 1190px;
+    left: 30px;
+}
+
+#ile9
+{
+    position: absolute;
+    top: 1260px;
+    left: 0;
+}
+
+#c25
+{
+    position: absolute;
+    top: 1290px;
+    left: 115px;
+}
+
+#c26
+{
+    position: absolute;
+    top: 1290px;
+    left: 185px;
+}
+
+#c27
+{
+    position: absolute;
+    top: 1290px;
+    left: 255px;
+}
+
+#ile10
+{
+    position: absolute;
+    top: 1260px;
+    left: 325px;
+}
+
+#c28
+{
+    position: absolute;
+    top: 1360px;
+    left: 365px;
+}
+
+#c29
+{
+    position: absolute;
+    top: 1430px;
+    left: 365px;
+}
+
+#c30
+{
+    position: absolute;
+    top: 1500px;
+    left: 365px;
+}
+
+#ile11
+{
+    position: absolute;
+    top: 1570px;
+    left: 325px;
+}
+
+#c31
+{
+    position: absolute;
+    top: 1600px;
+    left: 115px;
+}
+
+#c32
+{
+    position: absolute;
+    top: 1600px;
+    left: 185px;
+}
+
+#c33
+{
+    position: absolute;
+    top: 1600px;
+    left: 255px;
+}
+
+#ile12
+{
+    position: absolute;
+    top: 1570px;
+    left: 0;
+}
+
+#c34
+{
+    position: absolute;
+    top: 1670px;
+    left: 30px;
+}
+
+#c35
+{
+    position: absolute;
+    top: 1740px;
+    left: 30px;
+}
+
+#c36
+{
+    position: absolute;
+    top: 1810px;
+    left: 30px;
+}
+
+#ile13
+{
+    position: absolute;
+    top: 1880px;
+    left: 0;
+}
+
+#c37
+{
+    position: absolute;
+    top: 1910px;
+    left: 115px;
+}
+
+#c38
+{
+    position: absolute;
+    top: 1910px;
+    left: 185px;
+}
+
+#c39
+{
+    position: absolute;
+    top: 1910px;
+    left: 255px;
+}
+
+#ile14
+{
+    position: absolute;
+    top: 1880px;
+    left: 325px;
+}
+
+#c40
+{
+    position: absolute;
+    top: 1980px;
+    left: 365px;
+}
+
+#c41
+{
+    position: absolute;
+    top: 2050px;
+    left: 365px;
+}
+
+#c42
+{
+    position: absolute;
+    top: 2120px;
+    left: 365px;
+}
+
+#ile15
+{
+    position: absolute;
+    top: 2190px;
+    left: 325px;
+}
+
+#c43
+{
+    position: absolute;
+    top: 2220px;
+    left: 115px;
+}
+
+#c44
+{
+    position: absolute;
+    top: 2220px;
+    left: 185px;
+}
+
+#c45
+{
+    position: absolute;
+    top: 2220px;
+    left: 255px;
+}
+
+#ile16
+{
+    position: absolute;
+    top: 2190px;
+    left: 0;
+}
+
+#c46
+{
+    position: absolute;
+    top: 2290px;
+    left: 30px;
+}
+
+#c47
+{
+    position: absolute;
+    top: 2360px;
+    left: 30px;
+}
+
+#c48
+{
+    position: absolute;
+    top: 2430px;
+    left: 30px;
+}
+
+#ile17
+{
+    position: absolute;
+    top: 2500px;
+    left: 0;
+}
+
+#c49
+{
+    position: absolute;
+    top: 2530px;
+    left: 115px;
+}
+
+#c50
+{
+    position: absolute;
+    top: 2530px;
+    left: 185px;
+}
+
+#c51
+{
+    position: absolute;
+    top: 2530px;
+    left: 255px;
+}
+
+#ile18
+{
+    position: absolute;
+    top: 2500px;
+    left: 325px;
+}
+
+#c52
+{
+    position: absolute;
+    top: 2600px;
+    left: 365px;
+}
+
+#c53
+{
+    position: absolute;
+    top: 2670px;
+    left: 365px;
+}
+
+#c54
+{
+    position: absolute;
+    top: 2740px;
+    left: 365px;
+}
+
+#ile19
+{
+    position: absolute;
+    top: 2810px;
+    left: 325px;
+}
+
+#c55
+{
+    position: absolute;
+    top: 2840px;
+    left: 115px;
+}
+
+#c56
+{
+    position: absolute;
+    top: 2840px;
+    left: 185px;
+}
+
+#c57
+{
+    position: absolute;
+    top: 2840px;
+    left: 255px;
+}
+
+#ile20
+{
+    position: absolute;
+    top: 2810px;
+    left: 0;
+}
+
+#sunny
+{
+    position: absolute;
+    z-index: 2;
+    top: 15px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.dé
+{
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+    margin: 50px auto 0;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cube1
+{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    visibility: hidden;
+}
+
+.cube2
+{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(90deg) ;
+    visibility: hidden;
+
+}
+
+.cube3
+{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-90deg);
+    visibility: hidden;
+}
+
+.cube4
+{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(90deg) ;
+    visibility: hidden;
+}
+
+.cube5
+{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(-90deg) ;
+    visibility: hidden;
+    
+}
+
+.cube6
+{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg) ;
+    visibility: hidden;
+    
+}
+
+.animationDé
+{
+    visibility: visible;
+    animation: animeDe 4s linear;
+}
+
+.face
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.top
+{
+    background: url(./imgJeuOP/déF3.png) center/cover no-repeat;
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom
+{
+    background: url(./imgJeuOP/déF4.png) center/cover no-repeat;
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+.right
+{
+    background: url(./imgJeuOP/déF5.png) center/cover no-repeat;
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.left
+{
+    background: url(./imgJeuOP/déF2.png) center/cover no-repeat;
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.front
+{
+    background: url(./imgJeuOP/déF1.png) center/cover no-repeat;
+    transform: rotateX(0deg) translateZ(50px);
+}
+
+.back
+{
+    background: url(./imgJeuOP/déF6.png) center/cover no-repeat;
+    transform: rotateX(-180deg) translateZ(50px);
+}
+
+@keyframes animeDe
+{
+    0%
+    {
+        transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg);
+    }
+    10%
+    {
+        transform: rotateY(90deg);
+    }
+    20%
+    {
+        transform: rotateZ(90deg);
+    }
+    30%
+    {
+        transform: rotateX(90deg);
+    }
+    40%
+    {
+        transform: rotateY(90deg);
+    }
+    50%
+    {
+        transform: rotateZ(90deg);
+    }
+    60%
+    {
+        transform: rotateX(90deg);
+    }
+    70%
+    {
+        transform: rotateY(90deg);
+    }
+    80%
+    {
+        transform: rotateZ(90deg);
+    }
+    90%
+    {
+        transform: rotateX(90deg);
+    }
+}
+
+.pageDé
+{
+    height: 100vh;
+    width: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    visibility: hidden;
+    position: fixed;
+}
+
+#btnLancerDé
+{
+    position: absolute;
+    top: 200px;
+    color:rgb(201, 32, 9);
+    padding: 10px;
+    font-size: x-large;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#coeur1
+{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    z-index: 4;
+    position: fixed;
+}
+
+#coeur2
+{
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    z-index: 4;
+    position: fixed;
+}
+
+#coeur3
+{
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    z-index: 4;
+    position: fixed;
+}
+
+.indicationReculer2
+{
+    border: 2px solid rgb(98, 59, 5);
+    background-color: white;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    padding: 10px;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.indicationAttendre10s
+{
+    border: 2px solid rgb(98, 59, 5);
+    background-color: white;
+    position: absolute;
+    top: 550px;
+    left: 200px;
+    padding: 10px;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.indicationAvancer5
+{
+    border: 2px solid rgb(98, 59, 5);
+    background-color: white;
+    position: absolute;
+    top: 850px;
+    left: 100px;
+    padding: 10px;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.indicationReculer3
+{
+    border: 2px solid rgb(98, 59, 5);
+    background-color: white;
+    position: absolute;
+    top: 1150px;
+    left: 200px;
+    padding: 10px;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.indicationViep1
+{
+    border: 2px solid rgb(98, 59, 5);
+    background-color: white;
+    position: absolute;
+    top: 1450px;
+    left: 100px;
+    padding: 10px;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.indicationReculer5
+{
+    border: 2px solid rgb(98, 59, 5);
+    background-color: white;
+    position: absolute;
+    top: 1750px;
+    left: 200px;
+    padding: 10px;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.indicationAvancer3
+{
+    border: 2px solid rgb(98, 59, 5);
+    background-color: white;
+    position: absolute;
+    top: 2050px;
+    left: 100px;
+    padding: 10px;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.indicationAttendre5s
+{
+    border: 2px solid rgb(98, 59, 5);
+    background-color: white;
+    position: absolute;
+    top: 2350px;
+    left: 200px;
+    padding: 10px;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.indicationRien
+{
+    border: 2px solid rgb(98, 59, 5);
+    background-color: white;
+    position: absolute;
+    top: 2650px;
+    left: 100px;
+    padding: 10px;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.indicationViem1
+{
+    border: 2px solid rgb(98, 59, 5);
+    background-color: white;
+    position: absolute;
+    top: 2750px;
+    left: 100px;
+    padding: 10px;
+    z-index: 5;
+    visibility: hidden;
+}
+
+#questions
+{
+    height: 60%;
+    width: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(56, 32, 5);
+    color: darkgoldenrod;
+    text-shadow: 2 0 0 black;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: solid darkgoldenrod 4px;
+    z-index: 6;
+    visibility: hidden;
+    position: fixed;
+}
+
+.Question
+{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: solid darkgoldenrod 2px;
+    padding: 10px;
+    background-color: white;
+}
+
+#réponce1
+{
+    position: absolute;
+    top: 250px;
+    left: 80px;
+    transform: translateX(-50%);
+    border: solid darkgoldenrod 2px;
+    padding: 10px;
+    background-color: white;
+    margin: 5px;
+}
+
+#réponce2
+{
+    position: absolute;
+    top: 250px;
+    left: 180px;
+    transform: translateX(-50%);
+    border: solid darkgoldenrod 2px;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+}
+
+#réponce3
+{
+    position: absolute;
+    top: 250px;
+    left: 280px;
+    transform: translateX(-50%);
+    border: solid darkgoldenrod 2px;
+    padding: 10px;
+    background-color: white;
+    margin: 5px;
+}
+
+#réponce4
+{
+    position: absolute;
+    top: 250px;
+    left: 380px;
+    transform: translateX(-50%);
+    border: solid darkgoldenrod 2px;
+    padding: 10px;
+    background-color: white;
+    margin: 5px;
+}
+
+.pageVictoire
+{
+    background-color: rgb(12, 82, 12);
+    height: 100vh;
+    width: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    visibility: hidden;
+    position: fixed;
+}
+
+.pageDefaite
+{
+    background-color: rgb(133, 13, 13);
+    height: 100vh;
+    width: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    visibility: hidden;
+    position: fixed;
+}
+
+#textePV
+{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: xx-large;
+}
+
+#textePD
+{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: xx-large;
+}
+
+#recommencer
+{
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(133, 13, 13);
+    font-size: xx-large;
+    border: black 2px solid;
+    border-radius: 20px;
+    background-color: white;
+}

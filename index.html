@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu One Piece</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imgJeuOP/iconHautDePageOP.jpg" >
+</head>
+<body>
+    <div class="pageAccueil">
+        <h1>Jeu One Piece</h1>
+        <button onclick="fctCommencer()" id="btnCommencer">Commencer</button>
+    </div>
+
+    <div class="plateau">
+        <img src="./imgJeuOP/Shells_Town.webp" height="100px" id="ile1">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c1">
+        <img src="./imgJeuOP/coffre_clash_royal.png" height="60px" id="c2">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c3">
+        <img src="./imgJeuOP/Orange_town.webp" height="100px" id="ile2">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c4">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c5">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c6">
+        <img src="./imgJeuOP/Syrup_Village.webp" height="100px" id="ile3">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c7">
+        <img src="./imgJeuOP/coffre_clash_royal.png" height="60px" id="c8">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c9">
+        <img src="./imgJeuOP/Baratie_q.webp" height="90px" width="110px" id="ile4">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c10">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c11">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c12">
+        <img src="./imgJeuOP/Arlong_Park.webp" height="90px" width="110px" id="ile5">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c13">
+        <img src="./imgJeuOP/coffre_clash_royal.png" height="60px" id="c14">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c15">
+        <img src="./imgJeuOP/Loguetown.webp" height="90px" width="120px" id="ile6">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c16">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c17">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c18">
+        <img src="./imgJeuOP/Whiskey_Peak.webp" height="90px" width="120px" id="ile7">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c19">
+        <img src="./imgJeuOP/coffre_clash_royal.png" height="60px" id="c20">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c21">
+        <img src="./imgJeuOP/Little_Garden.webp" height="90px" width="120px" id="ile8">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c22">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c23">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c24">
+        <img src="./imgJeuOP/Drum_Island.webp" height="90px" width="120px" id="ile9">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c25">
+        <img src="./imgJeuOP/coffre_clash_royal.png" height="60px" id="c26">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c27">
+        <img src="./imgJeuOP/Alubarna.webp" height="90px" width="120px" id="ile10">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c28">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c29">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c30">
+        <img src="./imgJeuOP/Jaya.webp" height="90px" width="120px" id="ile11">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c31">
+        <img src="./imgJeuOP/coffre_clash_royal.png" height="60px" id="c32">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c33">
+        <img src="./imgJeuOP/Angel_Island.webp" height="90px" width="120px" id="ile12">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c34">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c35">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c36">
+        <img src="./imgJeuOP/Long_Ring_Long_Land.webp" height="90px" width="120px" id="ile13">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c37">
+        <img src="./imgJeuOP/coffre_clash_royal.png" height="60px" id="c38">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c39">
+        <img src="./imgJeuOP/Water7.webp" height="90px" width="120px" id="ile14">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c40">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c41">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c42">
+        <img src="./imgJeuOP/Enies_Lobby_Front_Gate.webp" height="90px" width="120px" id="ile15">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c43">
+        <img src="./imgJeuOP/coffre_clash_royal.png" height="60px" id="c44">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c45">
+        <img src="./imgJeuOP/thriller_bark.png" height="90px" width="120px" id="ile16">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c46">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c47">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c48">
+        <img src="./imgJeuOP/sabaody.png" height="90px" width="120px" id="ile17">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c49">
+        <img src="./imgJeuOP/coffre_clash_royal.png" height="60px" id="c50">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c51">
+        <img src="./imgJeuOP/amazone_lily.png" height="90px" width="120px" id="ile18">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c52">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c53">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c54">
+        <img src="./imgJeuOP/impel_down.png" height="90px" width="120px" id="ile19">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c55">
+        <img src="./imgJeuOP/coffre_clash_royal.png" height="60px" id="c56">
+        <img src="./imgJeuOP/imgCaseBerry.png" height="60px" id="c57">
+        <img src="./imgJeuOP/marine_ford.png" height="90px" width="120px" id="ile20">
+        <img src="./imgJeuOP/sunny.png" id="sunny" height="100px">
+        <img src="./imgJeuOP/icone-de-coeur-rouge-1.png" height="50px" id="coeur1">
+        <img src="./imgJeuOP/icone-de-coeur-rouge-1.png" height="50px" id="coeur2">
+        <img src="./imgJeuOP/icone-de-coeur-rouge-1.png" height="50px" id="coeur3">
+    </div>
+
+    <div class="pageDé">
+
+        <button onclick="getRandomIntInclusive(min, max)" id="btnLancerDé">Lancer le Dé</button>
+
+        <div class="dé">
+        <div class="cube1">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+            <div class="cube2">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+            <div class="cube3">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+            <div class="cube4">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+            <div class="cube5">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+            <div class="cube6">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="indication">
+        <div class="indicationReculer2">Reculer de 2 cases</div>
+        <div class="indicationAttendre10s">Attender 10s</div>
+        <div class="indicationAvancer5">Avancer de 5 cases</div>
+        <div class="indicationReculer3">Reculer de 3 cases</div>
+        <div class="indicationViep1">Vous avez gagné une vie</div>
+        <div class="indicationReculer5">Reculer de 5 cases</div>
+        <div class="indicationAvancer3">Avancer de 3 cases</div>
+        <div class="indicationAttendre5s">Attender 5s</div>
+        <div class="indicationRien">Rien</div>
+        <div class="indicationViem1">Vous avez perdu une vie</div>
+    </div>
+
+    <div class="question1ile1" id="questions">
+        <div class="Question">Comment  s'appelle la fille qui apporte des boulettes de riz à Zoro ?</div>
+        <button  id="réponce1" onclick="réponseQ1I1fausse()" >Kuina</button>
+        <button  id="réponce2" onclick="réponseQ1I1vrai()">Rika</button>
+        <button  id="réponce3" onclick="réponseQ1I1fausse()">Acilia</button>
+        <button  id="réponce4" onclick="réponseQ1I1fausse()">Gina</button>
+    </div>
+
+    <div class="question2ile1" id="questions">
+        <div class="Question">Comment S'appelle le fils du colonel Morgan ?</div>
+        <button  id="réponce1" onclick="réponseQ2I1fausse()" >Alber</button>
+        <button  id="réponce3" onclick="réponseQ2I1fausse()">Gatz</button>
+        <button  id="réponce2" onclick="réponseQ2I1fausse()">Koza</button>
+        <button  id="réponce4" onclick="réponseQ2I1vrai()">Hermep</button>
+    </div>
+
+    <div class="question3ile1" id="questions">
+        <div class="Question">Qui a tué le loup de Morgan ?</div>
+        <button  id="réponce1" onclick="réponseQ3I1vrai()">zoro</button>
+        <button  id="réponce4" onclick="réponseQ3I1fausse()" >Luffy</button>
+        <button  id="réponce3" onclick="réponseQ3I1fausse()">Kobby</button>
+        <button  id="réponce2" onclick="réponseQ3I1fausse()">Usopp</button>
+    </div>
+
+    <div class="question4ile1" id="questions">
+        <div class="Question">Qui a détruit la statue de Morgan ?</div>
+        <button  id="réponce1" onclick="réponseQ4I1fausse()" >Zoro</button>
+        <button  id="réponce3" onclick="réponseQ4I1fausse()">Koby</button>
+        <button  id="réponce4" onclick="réponseQ4I1vrai()">Luffy</button>
+        <button  id="réponce2" onclick="réponseQ4I1fausse()">Morgan</button>
+    </div>
+
+    <div class="question1ile2" id="questions"> 
+        <div class="Question">Comment s'appelle le chien qui a combattu contre le lion de Morge ?</div>
+        <button  id="réponce1" onclick="réponseQ1I2fausse()" >Saru</button>
+        <button  id="réponce2" onclick="réponseQ1I2vrai()">ChouChou</button>
+        <button  id="réponce3" onclick="réponseQ1I2fausse()">Chienguin</button>
+        <button  id="réponce4" onclick="réponseQ1I2fausse()">Holy</button>
+    </div>
+
+    <div class="question2ile2" id="questions"> 
+        <div class="Question">Comment s'appelle le monocycliste dans l'équipage de Baggy ?</div>
+        <button  id="réponce1" onclick="réponseQ2I2fausse()" >César</button>
+        <button  id="réponce4" onclick="réponseQ2I2vrai()">Cabaji</button>
+        <button  id="réponce3" onclick="réponseQ2I2fausse()">Puggy</button>
+        <button  id="réponce2" onclick="réponseQ2I2fausse()">Galdino</button>
+    </div>
+
+    <div class="question3ile2" id="questions"> 
+        <div class="Question">Comment s'appelle le fruit du démon de Baggy ?</div>
+        <button  id="réponce2" onclick="réponseQ3I2fausse()" >Dislocation</button>
+        <button  id="réponce1" onclick="réponseQ3I2vrai()">Framentation</button>
+        <button  id="réponce3" onclick="réponseQ3I2fausse()">Séparation</button>
+        <button  id="réponce4" onclick="réponseQ3I2fausse()">aucun</button>
+    </div>
+
+    <div class="question4ile2" id="questions"> 
+        <div class="Question">Qui a déjà été dans l'équipage de Baggy ?</div>
+        <button  id="réponce1" onclick="réponseQ4I2fausse()" >Jeet</button>
+        <button  id="réponce2" onclick="réponseQ4I2vrai()">Shanks</button>
+        <button  id="réponce3" onclick="réponseQ4I2fausse()">Laffitte</button>
+        <button  id="réponce4" onclick="réponseQ4I2fausse()">Morley</button>
+    </div>
+
+    <div class="question1ile3" id="questions"> 
+        <div class="Question">Lequel de c'est prénom et l'intrus ?</div>
+        <button  id="réponce1" onclick="réponseQ1I3fausse()" >Ognion</button>
+        <button  id="réponce2" onclick="réponseQ1I3vrai()">Noisette</button>
+        <button  id="réponce3" onclick="réponseQ1I3fausse()">Piment</button>
+        <button  id="réponce4" onclick="réponseQ1I3fausse()">Carotte</button>
+    </div>
+
+    <div class="question2ile3" id="questions"> 
+        <div class="Question">Quel est le faux nom de Kuro ?</div>
+        <button  id="réponce2" onclick="réponseQ2I3fausse()" >Kinemon</button>
+        <button  id="réponce1" onclick="réponseQ2I3vrai()">Klahadoll</button>
+        <button  id="réponce3" onclick="réponseQ2I3fausse()">Karasu</button>
+        <button  id="réponce4" onclick="réponseQ2I3fausse()">Kalgara</button>
+    </div>
+
+    <div class="question3ile3" id="questions"> 
+        <div class="Question">Qui à offer le Merry ?</div>
+        <button  id="réponce1" onclick="réponseQ3I3fausse()" >Kalifa</button>
+        <button  id="réponce3" onclick="réponseQ3I3vrai()">Kaya</button>
+        <button  id="réponce2" onclick="réponseQ3I3fausse()">Kapoty</button>
+        <button  id="réponce4" onclick="réponseQ3I3fausse()">Kiku</button>
+    </div>
+
+    <div class="question4ile3" id="questions"> 
+        <div class="Question">Comment Luffy a battu Kuro ?</div>
+        <button  id="réponce1" onclick="réponseQ4I3fausse()" >Main</button>
+        <button  id="réponce3" onclick="réponseQ4I3vrai()">Tête</button>
+        <button  id="réponce2" onclick="réponseQ4I3fausse()">Pied</button>
+        <button  id="réponce4" onclick="réponseQ4I3fausse()">Dent</button>
+    </div>
+
+    <div class="question1ile4" id="questions">  
+        <div class="Question">Comment Zeff a perdu sa jambe ?</div>
+        <button  id="réponce1" onclick="réponseQ1I4fausse()" >Une chute</button>
+        <button  id="réponce4" onclick="réponseQ1I4vrai()">Il l'a mangé</button>
+        <button  id="réponce3" onclick="réponseQ1I4fausse()">Un sabre</button>
+        <button  id="réponce2" onclick="réponseQ1I4fausse()">De l'acide</button>
+    </div>
+
+    <div class="question2ile4" id="questions"> 
+        <div class="Question">Comment s'appelle le capitaine du 2e bataillon de Krieg ?</div>
+        <button  id="réponce1" onclick="réponseQ2I4fausse()" >Gyn</button>
+        <button  id="réponce2" onclick="réponseQ2I4vrai()">Pearl</button>
+        <button  id="réponce3" onclick="réponseQ2I4fausse()">Don</button>
+        <button  id="réponce4" onclick="réponseQ2I4fausse()">joz</button>
+    </div>
+
+    <div class="question3ile4" id="questions"> 
+        <div class="Question">Combien de navire appartienne à Krieg ?</div>
+        <button  id="réponce1" onclick="réponseQ3I4fausse()" >5</button>
+        <button  id="réponce2" onclick="réponseQ3I4vrai()">50</button>
+        <button  id="réponce3" onclick="réponseQ3I4fausse()">500</button>
+        <button  id="réponce4" onclick="réponseQ3I4fausse()">5000</button>
+    </div>
+
+    <div class="question4ile4" id="questions"> 
+        <div class="Question">Qui a facilement battu l'armada de Krieg ?</div>
+        <button  id="réponce2" onclick="réponseQ4I4fausse()" >Rayleigh</button>
+        <button  id="réponce1" onclick="réponsG4I4vrai()">Mihawk</button>
+        <button  id="réponce3" onclick="réponseQ4I4fausse()">Law</button>
+        <button  id="réponce4" onclick="réponseQ4I4fausse()">Shiliew</button>
+    </div>
+
+    <div class="question1ile5" id="questions">  
+        <div class="Question">Comment s'appelle le contre-amiral attaquer par les hommes poissons ?</div>
+        <button  id="réponce1" onclick="réponseQ1I5fausse()" >Bastille</button>
+        <button  id="réponce2" onclick="réponseQ1I5vrai()">Pudding</button>
+        <button  id="réponce3" onclick="réponseQ1I5fausse()">Coburn</button>
+        <button  id="réponce4" onclick="réponseQ1I5fausse()">Fullbody</button>
+    </div>
+
+    <div class="question2ile5" id="questions"> 
+        <div class="Question">Qui est Nojiko par rapport à Nami ?</div>
+        <button  id="réponce1" onclick="réponseQ2I5fausse()" >Mère</button>
+        <button  id="réponce3" onclick="réponseQ2I5vrai()">Soeur</button>
+        <button  id="réponce2" onclick="réponseQ2I5fausse()">Tante</button>
+        <button  id="réponce4" onclick="réponseQ2I5fausse()">Cousine</button>
+    </div>
+
+    <div class="question3ile5" id="questions"> 
+        <div class="Question">Quel métier faisait Belmer ?</div>
+        <button  id="réponce2" onclick="réponseQ3I5fausse()" >Pirate</button>
+        <button  id="réponce1" onclick="réponseQ3I5vrai()">Marine</button>
+        <button  id="réponce3" onclick="réponseQ3I5fausse()">Marchande</button>
+        <button  id="réponce4" onclick="réponseQ3I5fausse()">Chasseuse de Primes</button>
+    </div>
+
+    <div class="question4ile5" id="questions"> 
+        <div class="Question">Comment s'appelle l'animal de compagnie des hommes poissons qui a anéanti Gossa ?</div>
+        <button  id="réponce1" onclick="réponseQ4I5fausse()" >Fukaboshi</button>
+        <button  id="réponce4" onclick="réponsG4I5vrai()">Meuh-Meuh</button>
+        <button  id="réponce3" onclick="réponseQ4I5fausse()">Dosun</button>
+        <button  id="réponce2" onclick="réponseQ4I5fausse()">Blueno</button>
+    </div>
+
+    <div class="question1ile6" id="questions">  
+        <div class="Question">Quelle catégorie de sabre est ensorcelée ?</div>
+        <button  id="réponce1" onclick="réponseQ1I6fausse()" >Nodachi</button>
+        <button  id="réponce4" onclick="réponseQ1I6vrai()">Kitetsu</button>
+        <button  id="réponce3" onclick="réponseQ1I6fausse()">Meito</button>
+        <button  id="réponce2" onclick="réponseQ1I6fausse()">Saijo</button>
+    </div>
+
+    <div class="question2ile6" id="questions"> 
+        <div class="Question">Qu'a fait Luffy quand il croyait mourir ?</div>
+        <button  id="réponce1" onclick="réponseQ2I6fausse()" >Lutter</button>
+        <button  id="réponce2" onclick="réponseQ2I6vrai()">Souri</button>
+        <button  id="réponce3" onclick="réponseQ2I6fausse()">Pleurer</button>
+        <button  id="réponce4" onclick="réponseQ2I6fausse()">dormi</button>
+    </div>
+
+    <div class="question3ile6" id="questions"> 
+        <div class="Question">Qui stop Smoker a Logue Town ?</div>
+        <button  id="réponce1" onclick="réponseQ3I6fausse()" >Zoro</button>
+        <button  id="réponce2" onclick="réponseQ3I6vrai()">Dragon</button>
+        <button  id="réponce3" onclick="réponseQ3I6fausse()">Ussop</button>
+        <button  id="réponce4" onclick="réponseQ3I6fausse()">Garp</button>
+    </div>
+
+    <div class="question4ile6" id="questions"> 
+        <div class="Question">Comment s'appelle le poisson que Sanji a obtenu à Logue Town ?</div>
+        <button  id="réponce2" onclick="réponseQ4I6fausse()" >Requin-rat</button>
+        <button  id="réponce4" onclick="réponsG4I6vrai()">Thon-Eléphant</button>
+        <button  id="réponce3" onclick="réponseQ4I6fausse()">Magicarpe</button>
+        <button  id="réponce1" onclick="réponseQ4I6fausse()">Mégalodon</button>
+    </div>
+
+    <div class="question1ile7" id="questions">  
+        <div class="Question">Qui est le maire de Whisky Peak ?</div>
+        <button  id="réponce1" onclick="réponseQ1I7fausse()" >Genzo</button>
+        <button  id="réponce4" onclick="réponseQ1I7vrai()">Igarappoi</button>
+        <button  id="réponce3" onclick="réponseQ1I7fausse()">Crocodile</button>
+        <button  id="réponce2" onclick="réponseQ1I7fausse()">Kaku</button>
+    </div>
+
+    <div class="question2ile7" id="questions"> 
+        <div class="Question">Combien d'hommes ont affronté Zoro à Whisky Peak ?</div>
+        <button  id="réponce1" onclick="réponseQ2I7fausse()" >+10</button>
+        <button  id="réponce2" onclick="réponseQ2I7vrai()">+50</button>
+        <button  id="réponce3" onclick="réponseQ2I7fausse()">+100</button>
+        <button  id="réponce4" onclick="réponseQ2I7fausse()">+500</button>
+    </div>
+
+    <div class="question3ile7" id="questions"> 
+        <div class="Question">Quel est le fruit du démon de Mr5 ?</div>
+        <button  id="réponce1" onclick="réponseQ3I7fausse()" >explosion</button>
+        <button  id="réponce4" onclick="réponseQ3I7vrai()">Boum-Boum</button>
+        <button  id="réponce3" onclick="réponseQ3I7fausse()">Kilo-kilo</button>
+        <button  id="réponce2" onclick="réponseQ3I7fausse()">poid</button>
+    </div>
+
+    <div class="question4ile7" id="questions"> 
+        <div class="Question">Qui est miss Wednesday ?</div>
+        <button  id="réponce2" onclick="réponseQ4I7fausse()" >Robin</button>
+        <button  id="réponce1" onclick="réponsG4I7vrai()">Vivi</button>
+        <button  id="réponce3" onclick="réponseQ4I7fausse()">Zala</button>
+        <button  id="réponce4" onclick="réponseQ4I7fausse()">Marianne</button>
+    </div>
+
+    <div class="question1ile8" id="questions">  
+        <div class="Question">Depuis combien de temps Dorry et Broggy s'affrontent ?</div>
+        <button  id="réponce1" onclick="réponseQ1I8fausse()" >10 ans</button>
+        <button  id="réponce3" onclick="réponseQ1I8vrai()">100 ans</button>
+        <button  id="réponce2" onclick="réponseQ1I8fausse()">50 ans</button>
+        <button  id="réponce4" onclick="réponseQ1I8fausse()">500 ans</button>
+    </div>
+
+    <div class="question2ile8" id="questions"> 
+        <div class="Question">Quel est le fruit de Miss GoldenWeek ?</div>
+        <button  id="réponce1" onclick="réponseQ2I8fausse()" >Coloration</button>
+        <button  id="réponce4" onclick="réponseQ2I8vrai()">Aucun</button>
+        <button  id="réponce3" onclick="réponseQ2I8fausse()">Duplication</button>
+        <button  id="réponce2" onclick="réponseQ2I8fausse()">Artiste</button>
+    </div>
+
+    <div class="question3ile8" id="questions"> 
+        <div class="Question">Comment Luffy a trouvé Mr3 ?</div>
+        <button  id="réponce1" onclick="réponseQ3I8fausse()" >Haki</button>
+        <button  id="réponce2" onclick="réponseQ3I8vrai()">Intuition</button>
+        <button  id="réponce3" onclick="réponseQ3I8fausse()">Odeur</button>
+        <button  id="réponce4" onclick="réponseQ3I8fausse()">Usoop</button>
+    </div>
+
+    <div class="question4ile8" id="questions"> 
+        <div class="Question">Comment s'appelle l'attaque combinée de Dorry et Broggy ?</div>
+        <button  id="réponce4" onclick="réponseQ4I8fausse()" >Désintégration</button>
+        <button  id="réponce2" onclick="réponsG4I8vrai()">Perforation</button>
+        <button  id="réponce3" onclick="réponseQ4I8fausse()">Météor</button>
+        <button  id="réponce1" onclick="réponseQ4I8fausse()">Damoclès</button>
+    </div>
+
+    <div class="question1ile9" id="questions">  
+        <div class="Question">Comment s'appelle le chef de la garde civile de Drum ?</div>
+        <button  id="réponce2" onclick="réponseQ1I9fausse()" >Chess</button>
+        <button  id="réponce1" onclick="réponseQ1I9vrai()">Dolton</button>
+        <button  id="réponce3" onclick="réponseQ1I9fausse()">Wapol</button>
+        <button  id="réponce4" onclick="réponseQ1I9fausse()">Kuromarimo</button>
+    </div>
+
+    <div class="question2ile9" id="questions"> 
+        <div class="Question">Quel âge à Dr Kureha dans le tome 15 ?</div>
+        <button  id="réponce1" onclick="réponseQ2I9fausse()" >109</button>
+        <button  id="réponce4" onclick="réponseQ2I9vrai()">139</button>
+        <button  id="réponce3" onclick="réponseQ2I9fausse()">129</button>
+        <button  id="réponce2" onclick="réponseQ2I9fausse()">119</button>
+    </div>
+
+    <div class="question3ile9" id="questions"> 
+        <div class="Question">Quel est le fruit du démon de Dolton ?</div>
+        <button  id="réponce1" onclick="réponseQ3I9fausse()" >Cerf</button>
+        <button  id="réponce2" onclick="réponseQ3I9vrai()">Bovin</button>
+        <button  id="réponce3" onclick="réponseQ3I9fausse()">Minotaure</button>
+        <button  id="réponce4" onclick="réponseQ3I9fausse()">Aucun</button>
+    </div>
+
+    <div class="question4ile9" id="questions"> 
+        <div class="Question">Comment meurt quelqu'un selon Hiluluk ?</div>
+        <button  id="réponce1" onclick="réponseQ4I9fausse()" >Maladie</button>
+        <button  id="réponce2" onclick="réponsG4I9vrai()">Oubli</button>
+        <button  id="réponce3" onclick="réponseQ4I9fausse()">Trahison</button>
+        <button  id="réponce4" onclick="réponseQ4I9fausse()">Impuissance</button>
+    </div>
+
+    <div class="question1ile10" id="questions">  
+        <div class="Question">Quel est l'ancienne prime de Crocodile avant qu'il ne soit grand corsaire ?</div>
+        <button  id="réponce1" onclick="réponseQ1I10fausse()" >71 millions</button>
+        <button  id="réponce2" onclick="réponseQ1I10vrai()">81 millions</button>
+        <button  id="réponce3" onclick="réponseQ1I10fausse()">91 millions</button>
+        <button  id="réponce4" onclick="réponseQ1I10fausse()">101 millions</button>
+    </div>
+
+    <div class="question2ile10" id="questions"> 
+        <div class="Question">Qui est le chef de la rébellion d'Alubarna ?</div>
+        <button  id="réponce1" onclick="réponseQ2I10fausse()" >Cobra</button>
+        <button  id="réponce2" onclick="réponseQ2I10vrai()">Koza</button>
+        <button  id="réponce3" onclick="réponseQ2I10fausse()">Vivi</button>
+        <button  id="réponce4" onclick="réponseQ2I10fausse()">Pell</button>
+    </div>
+
+    <div class="question3ile10" id="questions"> 
+        <div class="Question">Comment Luffy a réussi à toucher Crocodile ?</div>
+        <button  id="réponce2" onclick="réponseQ3I10fausse()" >Haki</button>
+        <button  id="réponce1" onclick="réponseQ3I10vrai()">Sang</button>
+        <button  id="réponce3" onclick="réponseQ3I10fausse()">Arme</button>
+        <button  id="réponce4" onclick="réponseQ3I10fausse()">Rien</button>
+    </div>
+
+    <div class="question4ile10" id="questions"> 
+        <div class="Question">Quel poids pèse soi-disant le marteau d'Ussop quand il frappe Mr4 ?</div>
+        <button  id="réponce2" onclick="réponseQ4I10fausse()" >10T</button>
+        <button  id="réponce1" onclick="réponsG4I10vrai()">5T</button>
+        <button  id="réponce3" onclick="réponseQ4I10fausse()">50T</button>
+        <button  id="réponce4" onclick="réponseQ4I10fausse()">100T</button>
+    </div>
+
+    <div class="question1ile11" id="questions">  
+        <div class="Question">Quelle est la prime de Roshio ?</div>
+        <button  id="réponce1" onclick="réponseQ1I11fausse()" >22 millions</button>
+        <button  id="réponce3" onclick="réponseQ1I11vrai()">42 millions</button>
+        <button  id="réponce2" onclick="réponseQ1I11fausse()">32 millions</button>
+        <button  id="réponce4" onclick="réponseQ1I11fausse()">52 millions</button>
+    </div>
+
+    <div class="question2ile11" id="questions"> 
+        <div class="Question">Qui bat Roshio ?</div>
+        <button  id="réponce1" onclick="réponseQ2I11fausse()" >Luffy</button>
+        <button  id="réponce2" onclick="réponseQ2I11vrai()">Bellamy</button>
+        <button  id="réponce3" onclick="réponseQ2I11fausse()">Robin</button>
+        <button  id="réponce4" onclick="réponseQ2I11fausse()">Ussop</button>
+    </div>
+
+    <div class="question3ile11" id="questions"> 
+        <div class="Question">Luffy rencontre qui a Jawa ?</div>
+        <button  id="réponce1" onclick="réponseQ3I11fausse()" >Ace</button>
+        <button  id="réponce2" onclick="réponseQ3I11vrai()">Teach</button>
+        <button  id="réponce3" onclick="réponseQ3I11fausse()">Shanks</button>
+        <button  id="réponce4" onclick="réponseQ3I11fausse()">Doflamingo</button>
+    </div>
+
+    <div class="question4ile11" id="questions"> 
+        <div class="Question">Que fait Luffy quand Bellamy le tape ?</div>
+        <button  id="réponce2" onclick="réponseQ4I11fausse()" >Rigole</button>
+        <button  id="réponce4" onclick="réponsG4I11vrai()">Rien</button>
+        <button  id="réponce3" onclick="réponseQ4I11fausse()">Riposte</button>
+        <button  id="réponce1" onclick="réponseQ4I11fausse()">Pleure</button>
+    </div>
+
+    <div class="question1ile12" id="questions">  
+        <div class="Question">Comment s'appelle le renard de Conis ?</div>
+        <button  id="réponce1" onclick="réponseQ1I12fausse()" >Light</button>
+        <button  id="réponce2" onclick="réponseQ1I12vrai()">Soo</button>
+        <button  id="réponce3" onclick="réponseQ1I12fausse()">Zory</button>
+        <button  id="réponce4" onclick="réponseQ1I12fausse()">Goupix</button>
+    </div>
+
+    <div class="question2ile12" id="questions"> 
+        <div class="Question">Lequel de ces dials n'existe pas ?</div>
+        <button  id="réponce1" onclick="réponseQ2I12fausse()" >Axe</button>
+        <button  id="réponce2" onclick="réponseQ2I12vrai()">Onde</button>
+        <button  id="réponce3" onclick="réponseQ2I12fausse()">Flamme</button>
+        <button  id="réponce4" onclick="réponseQ2I12fausse()">Flash</button>
+    </div>
+
+    <div class="question3ile12" id="questions"> 
+        <div class="Question">Zoro a utilisé quelle technique pour battre Om ?</div>
+        <button  id="réponce1" onclick="réponseQ3I12fausse()" >36 Klesha</button>
+        <button  id="réponce3" onclick="réponseQ3I12vrai()">108 Klesha</button>
+        <button  id="réponce2" onclick="réponseQ3I12fausse()">72 Klesha</button>
+        <button  id="réponce4" onclick="réponseQ3I12fausse()">144 Klesha</button>
+    </div>
+
+    <div class="question4ile12" id="questions"> 
+        <div class="Question">Quel est le motif d'exécution de Norland ?</div>
+        <button  id="réponce1" onclick="réponseQ4I12fausse()" >Meurtre</button>
+        <button  id="réponce2" onclick="réponsG4I12vrai()">Mensonge</button>
+        <button  id="réponce3" onclick="réponseQ4I12fausse()">Viole</button>
+        <button  id="réponce4" onclick="réponseQ4I12fausse()">Vole</button>
+    </div>
+
+    <div class="question1ile13" id="questions">  
+        <div class="Question">Comment s'appelle le nomade rencontrer par Luffy ?</div>
+        <button  id="réponce1" onclick="réponseQ1I13fausse()" >Kinemon</button>
+        <button  id="réponce2" onclick="réponseQ1I13vrai()">Tonjit</button>
+        <button  id="réponce3" onclick="réponseQ1I13fausse()">Foxi</button>
+        <button  id="réponce4" onclick="réponseQ1I13fausse()">Kaku</button>
+    </div>
+
+    <div class="question2ile13" id="questions"> 
+        <div class="Question">Quel amiral Luffy a croisé sur Long Ring Long Land ?</div>
+        <button  id="réponce2" onclick="réponseQ2I13fausse()" >Kisaru</button>
+        <button  id="réponce1" onclick="réponseQ2I13vrai()">Aokiji</button>
+        <button  id="réponce3" onclick="réponseQ2I13fausse()">Akainu</button>
+        <button  id="réponce4" onclick="réponseQ2I13fausse()">Fugitora</button>
+    </div>
+
+    <div class="question3ile13" id="questions"> 
+        <div class="Question">Quel est le fruit du démon de Foxi ?</div>
+        <button  id="réponce1" onclick="réponseQ3I13fausse()" >Rapido</button>
+        <button  id="réponce2" onclick="réponseQ3I13vrai()">Ramollo</button>
+        <button  id="réponce3" onclick="réponseQ3I13fausse()">Hypno</button>
+        <button  id="réponce4" onclick="réponseQ3I13fausse()">Tempo</button>
+    </div>
+
+    <div class="question4ile13" id="questions"> 
+        <div class="Question">Quel trophée choisit Foxi ?</div>
+        <button  id="réponce1" onclick="réponseQ4I13fausse()" >Nami</button>
+        <button  id="réponce3" onclick="réponsG4I13vrai()">Chopper</button>
+        <button  id="réponce2" onclick="réponseQ4I13fausse()">Robin</button>
+        <button  id="réponce4" onclick="réponseQ4I13fausse()">Sanji</button>
+    </div>
+
+    <div class="question1ile14" id="questions">  
+        <div class="Question">Pourquoi Ussop et Luffy se battent ?</div>
+        <button  id="réponce1" onclick="réponseQ1I14fausse()" >Nourritures</button>
+        <button  id="réponce2" onclick="réponseQ1I14vrai()">Merry</button>
+        <button  id="réponce3" onclick="réponseQ1I14fausse()">Femme</button>
+        <button  id="réponce4" onclick="réponseQ1I14fausse()">Prime</button>
+    </div>
+
+    <div class="question2ile14" id="questions"> 
+        <div class="Question">Qui n'est pas membre de Cipher pol N°9 ?</div>
+        <button  id="réponce1" onclick="réponseQ2I14fausse()" >Spadam</button>
+        <button  id="réponce4" onclick="réponseQ2I14vrai()">Lucy</button>
+        <button  id="réponce3" onclick="réponseQ2I14fausse()">Hattori</button>
+        <button  id="réponce2" onclick="réponseQ2I14fausse()">Fukuro</button>
+    </div>
+
+    <div class="question3ile14" id="questions"> 
+        <div class="Question">Que veut le Cipher Pol N°9 ?</div>
+        <button  id="réponce1" onclick="réponseQ3I14fausse()" >Rien</button>
+        <button  id="réponce4" onclick="réponseQ3I14vrai()">Arme Antique</button>
+        <button  id="réponce3" onclick="réponseQ3I14fausse()">Argent</button>
+        <button  id="réponce2" onclick="réponseQ3I14fausse()">Famille</button>
+    </div>
+
+    <div class="question4ile14" id="questions"> 
+        <div class="Question">Qui a construit le bateau de Roger ?</div>
+        <button  id="réponce1" onclick="réponseQ4I14fausse()" >Francky</button>
+        <button  id="réponce2" onclick="réponsG4I14vrai()">Tom</button>
+        <button  id="réponce3" onclick="réponseQ4I14fausse()">Gaban</button>
+        <button  id="réponce4" onclick="réponseQ4I14fausse()">Icebarg</button>
+    </div>
+
+    <div class="question1ile15" id="questions">  
+        <div class="Question">Que Brule Sniperking  en arrivant sur Enies Lobby ?</div>
+        <button  id="réponce1" onclick="réponseQ1I15fausse()" >Kaku</button>
+        <button  id="réponce3" onclick="réponseQ1I15vrai()">Drapeau</button>
+        <button  id="réponce2" onclick="réponseQ1I15fausse()">Bateau</button>
+        <button  id="réponce4" onclick="réponseQ1I15fausse()">Batiment</button>
+    </div>
+
+    <div class="question2ile15" id="questions"> 
+        <div class="Question">Combien  Chopper use de Rumble Balls pour devenir un monstre ?</div>
+        <button  id="réponce1" onclick="réponseQ2I15fausse()" >1</button>
+        <button  id="réponce3" onclick="réponseQ2I15vrai()">3</button>
+        <button  id="réponce2" onclick="réponseQ2I15fausse()">2</button>
+        <button  id="réponce4" onclick="réponseQ2I15fausse()">4</button>
+    </div>
+
+    <div class="question3ile15" id="questions"> 
+        <div class="Question">Qu'est que Kokora ?</div>
+        <button  id="réponce1" onclick="réponseQ3I15fausse()" >Bateau</button>
+        <button  id="réponce4" onclick="réponseQ3I15vrai()">Sirène</button>
+        <button  id="réponce3" onclick="réponseQ3I15fausse()">humaine</button>
+        <button  id="réponce2" onclick="réponseQ3I15fausse()">batiment</button>
+    </div>
+
+    <div class="question4ile15" id="questions"> 
+        <div class="Question">Avec quelle attaque Luffy bat Lucci ?</div>
+        <button  id="réponce1" onclick="réponseQ4I15fausse()" >Bazooka</button>
+        <button  id="réponce2" onclick="réponsG4I15vrai()">Rafale</button>
+        <button  id="réponce3" onclick="réponseQ4I15fausse()">Bullet</button>
+        <button  id="réponce4" onclick="réponseQ4I15fausse()">Pistol</button>
+    </div>
+
+    <div class="question1ile16" id="questions">  
+        <div class="Question">Combien d'ombre Luffy a avalé pour passer en Nightmare ?</div>
+        <button  id="réponce2" onclick="réponseQ1I16fausse()" >100</button>
+        <button  id="réponce1" onclick="réponseQ1I16vrai()">500</button>
+        <button  id="réponce3" onclick="réponseQ1I16fausse()">1000</button>
+        <button  id="réponce4" onclick="réponseQ1I16fausse()">5000</button>
+    </div>
+
+    <div class="question2ile16" id="questions"> 
+        <div class="Question">Quel est le fruit du démon d'Absalom ?</div>
+        <button  id="réponce1" onclick="réponseQ2I16fausse()" >Camouflage</button>
+        <button  id="réponce2" onclick="réponseQ2I16vrai()">Invisibilité</button>
+        <button  id="réponce3" onclick="réponseQ2I16fausse()">Disparition</button>
+        <button  id="réponce4" onclick="réponseQ2I16fausse()">Téléportation</button>
+    </div>
+
+    <div class="question3ile16" id="questions"> 
+        <div class="Question">Qu'attend Laboon ?</div>
+        <button  id="réponce1" onclick="réponseQ3I16fausse()" >Roger</button>
+        <button  id="réponce3" onclick="réponseQ3I16vrai()">Brook</button>
+        <button  id="réponce2" onclick="réponseQ3I16fausse()">Ace</button>
+        <button  id="réponce4" onclick="réponseQ3I16fausse()">John</button>
+    </div>
+
+    <div class="question4ile16" id="questions"> 
+        <div class="Question">Qui donne Shusui à Zoro ?</div>
+        <button  id="réponce1" onclick="réponseQ4I16fausse()" >Tashigi</button>
+        <button  id="réponce2" onclick="réponsG4I16vrai()">Ryuma</button>
+        <button  id="réponce3" onclick="réponseQ4I16fausse()">Brook</button>
+        <button  id="réponce4" onclick="réponseQ4I16fausse()">Oden</button>
+    </div>
+
+    <div class="question1ile17" id="questions">  
+        <div class="Question">Qui est la patronne du Bar Ancienne Pirate ?</div>
+        <button  id="réponce1" onclick="réponseQ1I17fausse()" >Nyon</button>
+        <button  id="réponce2" onclick="réponseQ1I17vrai()">Shakky</button>
+        <button  id="réponce3" onclick="réponseQ1I17fausse()">Bakkin</button>
+        <button  id="réponce4" onclick="réponseQ1I17fausse()">Stussy</button>
+    </div>
+
+    <div class="question2ile17" id="questions"> 
+        <div class="Question">Qui stop Zoro évitant qu'il tue un dragon céleste ?</div>
+        <button  id="réponce1" onclick="réponseQ2I17fausse()" >Apoo</button>
+        <button  id="réponce2" onclick="réponseQ2I17vrai()">Bonney</button>
+        <button  id="réponce3" onclick="réponseQ2I17fausse()">Killer</button>
+        <button  id="réponce4" onclick="réponseQ2I17fausse()">Law</button>
+    </div>
+
+    <div class="question3ile17" id="questions"> 
+        <div class="Question">Quel est le surnom de Rayleigh ?</div>
+        <button  id="réponce1" onclick="réponseQ3I17fausse()" >Vioc</button>
+        <button  id="réponce4" onclick="réponseQ3I17vrai()">Seigneur des Ténebres</button>
+        <button  id="réponce3" onclick="réponseQ3I17fausse()">invincible</button>
+        <button  id="réponce2" onclick="réponseQ3I17fausse()">immortelle</button>
+    </div>
+
+    <div class="question4ile17" id="questions"> 
+        <div class="Question">Combien paye le dragon céleste pour Keimi ?</div>
+        <button  id="réponce1" onclick="réponseQ4I17fausse()" >100 millions</button>
+        <button  id="réponce2" onclick="réponsG4I17vrai()">500 millions</button>
+        <button  id="réponce3" onclick="réponseQ4I17fausse()">1000 millions</button>
+        <button  id="réponce4" onclick="réponseQ4I17fausse()">5000 millions</button>
+    </div>
+
+    <div class="question1ile18" id="questions">  
+        <div class="Question">Quel vice amiral doit faire venir Hancock à Marine Ford .</div>
+        <button  id="réponce1" onclick="réponseQ1I18fausse()" >John</button>
+        <button  id="réponce2" onclick="réponseQ1I18vrai()">Momonga</button>
+        <button  id="réponce3" onclick="réponseQ1I18fausse()">Tsuru</button>
+        <button  id="réponce4" onclick="réponseQ1I18fausse()">Garp</button>
+    </div>
+
+    <div class="question2ile18" id="questions"> 
+        <div class="Question">Comment s'appelle la panthère noir qui combat luffy ?</div>
+        <button  id="réponce1" onclick="réponseQ2I18fausse()" >Baku</button>
+        <button  id="réponce2" onclick="réponseQ2I18vrai()">Bacura</button>
+        <button  id="réponce3" onclick="réponseQ2I18fausse()">Lily</button>
+        <button  id="réponce4" onclick="réponseQ2I18fausse()">Paku</button>
+    </div>
+
+    <div class="question3ile18" id="questions"> 
+        <div class="Question">Qui a le fruit du démon version anaconda ?</div>
+        <button  id="réponce1" onclick="réponseQ3I18fausse()" >Hancock</button>
+        <button  id="réponce4" onclick="réponseQ3I18vrai()">Sandersonia</button>
+        <button  id="réponce3" onclick="réponseQ3I18fausse()">Salome</button>
+        <button  id="réponce2" onclick="réponseQ3I18fausse()">Marigold</button>
+    </div>
+
+    <div class="question4ile18" id="questions"> 
+        <div class="Question">Quelle est la proportion de personne qui possède le harki des rois ?</div>
+        <button  id="réponce1" onclick="réponseQ4I18fausse()" >1/100 000</button>
+        <button  id="réponce3" onclick="réponsG4I18vrai()">1/1000 000</button>
+        <button  id="réponce4" onclick="réponseQ4I18fausse()">1//5000 000</button>
+        <button  id="réponce2" onclick="réponseQ4I18fausse()">1/500 000</button>
+    </div>
+
+    <div class="question1ile19" id="questions">  
+        <div class="Question">Qui n'est pas allé à Impel Down ?</div>
+        <button  id="réponce1" onclick="réponseQ1I19fausse()" >Baggy</button>
+        <button  id="réponce2" onclick="réponseQ1I19vrai()">Roger</button>
+        <button  id="réponce3" onclick="réponseQ1I19fausse()">Morley</button>
+        <button  id="réponce4" onclick="réponseQ1I19fausse()">Arlong</button>
+    </div>
+
+    <div class="question2ile19" id="questions"> 
+        <div class="Question">Qui est la chef de la garde démoniaque ?</div>
+        <button  id="réponce1" onclick="réponseQ2I19fausse()" >Domino</button>
+        <button  id="réponce2" onclick="réponseQ2I19vrai()">Sadi</button>
+        <button  id="réponce3" onclick="réponseQ2I19fausse()">Olive</button>
+        <button  id="réponce4" onclick="réponseQ2I19fausse()">Jora</button>
+    </div>
+
+    <div class="question3ile19" id="questions"> 
+        <div class="Question">Qui a guéri Luffy a Impel Down ?</div>
+        <button  id="réponce1" onclick="réponseQ3I19fausse()" >Catarina</button>
+        <button  id="réponce2" onclick="réponseQ3I19vrai()">Ivankov</button>
+        <button  id="réponce3" onclick="réponseQ3I19fausse()">Inazuma</button>
+        <button  id="réponce4" onclick="réponseQ3I19fausse()">Vasco</button>
+    </div>
+
+    <div class="question4ile19" id="questions"> 
+        <div class="Question">Quel est le sabre de shiliew ?</div>
+        <button  id="réponce1" onclick="réponseQ4I19fausse()" >Enma</button>
+        <button  id="réponce2" onclick="réponsG4I19vrai()">Raiu</button>
+        <button  id="réponce3" onclick="réponseQ4I19fausse()">Oto</button>
+        <button  id="réponce4" onclick="réponseQ4I19fausse()">Murakumogiri</button>
+    </div>
+
+    <div class="question1ile20" id="questions">  
+        <div class="Question">Quel vice amiral se fait détruire par Barbe Blanche ?</div>
+        <button  id="réponce2" onclick="réponseQ1I20fausse()" >Momonga</button>
+        <button  id="réponce1" onclick="réponseQ1I20vrai()">John</button>
+        <button  id="réponce3" onclick="réponseQ1I20fausse()">Komir</button>
+        <button  id="réponce4" onclick="réponseQ1I20fausse()">Bastille</button>
+    </div>
+
+    <div class="question2ile20" id="questions"> 
+        <div class="Question">Qui est le chef de la 5e flotte de Barbe Blanche ?</div>
+        <button  id="réponce1" onclick="réponseQ2I20fausse()" >Joz</button>
+        <button  id="réponce3" onclick="réponseQ2I20vrai()">Vista</button>
+        <button  id="réponce2" onclick="réponseQ2I20fausse()">Blamenco</button>
+        <button  id="réponce4" onclick="réponseQ2I20fausse()">Atmos</button>
+    </div>
+
+    <div class="question3ile20" id="questions"> 
+        <div class="Question">Qui stop la guerre ?</div>
+        <button  id="réponce1" onclick="réponseQ3I20fausse()" >Shanks</button>
+        <button  id="réponce2" onclick="réponseQ3I20vrai()">Kobby</button>
+        <button  id="réponce3" onclick="réponseQ3I20fausse()">Marco</button>
+        <button  id="réponce4" onclick="réponseQ3I20fausse()">Sengoku</button>
+    </div>
+
+    <div class="question4ile20" id="questions"> 
+        <div class="Question">Combien de coup de sabre a reçu Barbe Blanche ?</div>
+        <button  id="réponce1" onclick="réponseQ4I20fausse()" >46</button>
+        <button  id="réponce3" onclick="réponsG4I20vrai()">267</button>
+        <button  id="réponce2" onclick="réponseQ4I20fausse()">152</button>
+        <button  id="réponce4" onclick="réponseQ4I20fausse()">538</button>
+    </div>
+
+    <div class="pageVictoire"><p id="textePV">Bravo, vous êtes un vrai fan !</p>
+        <button id="recommencer" onclick="recommencer()">Recommencer</button>
+    </div>
+    <div class="pageDefaite"><p id="textePD">Malheureusement, vous avez perdu vous n'êtes pas le meilleur fan de One Piece !</p>
+        <button id="recommencer" onclick="recommencer()">Recommencer</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
